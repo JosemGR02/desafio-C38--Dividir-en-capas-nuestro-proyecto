@@ -1,0 +1,40 @@
+{
+  "name": "desafioclase38usandoyarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JosemGR02/desafio-C38--Dividir-en-capas-nuestro-proyecto.git",
+  "author": "Jose gomez <100965428+JosemGR02@users.noreply.github.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "0x src/app.js",
+    "test": "node src/benchmark.js",
+    "dev": "nodemon src/app.js",
+    "prod": "set LOGGER_MODO=PROD && node src/app.js",
+    "cross": "cross-env set LOGGER_MODO=PROD && node src/app.js"
+  },
+  "dependencies": {
+    "autocannon": "^7.10.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "joi": "^17.7.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.9.1",
+    "os": "^0.1.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "rxjs": "^7.8.0",
+    "winston": "^3.8.2",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
