@@ -10,8 +10,8 @@ dotenv.config();
 function crearLoggerProd() {
     const loggerPROD = winston.createLogger({
         transports: [
-            new winston.transports.File({ filename: 'warn.log', level: 'warn' }),
-            new winston.transports.File({ filename: 'error.log', level: 'error' }),
+            new winston.transports.File({ filename: '/src/logs/warn.log', level: 'warn' }),
+            new winston.transports.File({ filename: '/src/logs/error.log', level: 'error' }),
         ],
     })
     return loggerPROD

@@ -1,6 +1,7 @@
 
 import autocannon from 'autocannon';
 import { PassThrough } from 'stream';
+import { logger } from './Configuracion/logger.js';
 
 function run(url) {
     const buf = []
@@ -20,9 +21,11 @@ function run(url) {
     })
 }
 
-console.log('Running all benchmarks in parallel ...')
+logger.info('Ejecutar todas las pruebas en paralelo...')
 
 run('http://localhost:8080/api/info/bloq')
 run('http://localhost:8080/api/info/nobloq')
 
 
+import autocannon from 'autocannon';
+import { PassThrough } from 'stream';
